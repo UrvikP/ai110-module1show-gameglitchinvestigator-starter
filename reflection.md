@@ -7,6 +7,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  The first time I ran this game, I started by inputing my guess. It kept saying go higher until i ran out of attempts. However the game stopped early as I would always have 1 attempt left. I tried a different difficulty, in this case easy and it showed attempts left but when I checked the developer debugg info, the secret number was not between 1 - 20. The hints were definetely backwards, the game did not reset to reflect the difficulty level selected, and New Game button doesn't work.
 
 **Bug Reproduction Log**
 
@@ -14,9 +15,11 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| 66| "Go HIGHER" | "Go LOWER" | none |
+
+| New Game | Reset Game | Resets number of attempts, new secret number, does not reset history, score, submit guess button doesnt work | Game Over. Start a new game to try again |
+
+| Easy | Set Attepmts to 6, set secret number to a value between 1 - 20 | Set attempts to 5, secret number did not change, game still ends with 1 attempt remaining | Out of attempts! The secret was 72. Score: -25 |
 
 ---
 
